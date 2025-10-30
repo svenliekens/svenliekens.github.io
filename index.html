@@ -19,12 +19,24 @@
                 align-items: center;
             }
 
+            .logo-link {
+                cursor: pointer;
+                display: inline-block;
+                transition: transform 0.3s ease, opacity 0.3s ease;
+            }
+
+            .logo-link:hover {
+                transform: scale(1.1);
+                opacity: 0.8;
+            }
+
             .logo {
                 height: 25vh;
+                display: block;
             }
         </style>
     </head>
     <body>
-        <a href="https://www.linkedin.com/in/sven-liekens/" target="_blank"><img class="logo" src="logo.svg" alt="svenl.dev"/></a>
+        <a class="logo-link" href="https://www.linkedin.com/in/sven-liekens/" target="_blank"><img class="logo" src="logo.svg" alt="svenl.dev"/></a>
     </body>
 </html>
